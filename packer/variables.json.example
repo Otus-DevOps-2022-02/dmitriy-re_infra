@@ -1,0 +1,5 @@
+{
+ "folder_id" : "k7a410ci0331a7esd4h63",
+ "source_image" : "ubuntu-1604-lts",
+ "path_to_sa_key" : "key.json"
+}
