@@ -24,5 +24,5 @@ variable "service_account_key_file" {
 }
 variable "private_key_path" {
   description = "Private key path"
-#  default     = "~/.ssh/ubuntu"
+  #  default     = "~/.ssh/ubuntu"
 }
