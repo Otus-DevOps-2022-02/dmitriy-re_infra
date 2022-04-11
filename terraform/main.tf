@@ -8,7 +8,6 @@
 #}
 
 provider "yandex" {
-  #  token     = "AQAAAABepmmcAATuwcovpIJ300Nzm_JAfirpjhA"
   service_account_key_file = var.service_account_key_file
   cloud_id                 = var.cloud_id
   folder_id                = var.folder_id
@@ -46,7 +45,6 @@ resource "yandex_compute_instance" "app" {
     user  = "ubuntu"
     agent = false
     # путь до приватного ключа
-    # private_key = file("~/.ssh/ubuntu")
     private_key = file(var.private_key_path)
   }
 
