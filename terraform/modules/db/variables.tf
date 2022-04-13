@@ -8,5 +8,3 @@ variable public_key_path {
 variable subnet_id {
 description = "Subnets for modules"
 }
-variable yandex_vpc_subnet {
-}
