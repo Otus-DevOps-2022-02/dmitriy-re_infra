@@ -3,5 +3,6 @@ variables.json
 *.tfstate.*.backup
 *.tfstate.backup
 *.tfvars
+*.retry
 .terraform/
 key.json

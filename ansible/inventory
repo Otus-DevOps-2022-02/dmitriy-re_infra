@@ -1,5 +1,5 @@
 [app]
-appserver ansible_host=51.250.64.26 ansible_user=ubuntu ansible_private_key_file=~/.ssh/ubuntu
+appserver ansible_host=51.250.11.167 ansible_user=ubuntu ansible_private_key_file=~/.ssh/ubuntu
 
 [db]
-dbserver ansible_host=51.250.70.228 ansible_user=ubuntu ansible_private_key_file=~/.ssh/ubuntu
+dbserver ansible_host=51.250.11.99 ansible_user=ubuntu ansible_private_key_file=~/.ssh/ubuntu
