@@ -11,18 +11,19 @@
             "service_account_key_file": "{{user `path_to_sa_key`}}",
             "folder_id": "{{user `folder_id`}}",
             "source_image_family": "{{user `source_image`}}",
-            "image_name": "reddit-db-base-1",
+            "image_name": "reddit-app-base-1",
             "image_family": "reddit-base",
             "ssh_username": "ubuntu",
             "platform_id": "standard-v1",
-            "subnet_id": "e9buljhq62uv5l0e1kre",
+            "subnet_id": "e9b70nt938av637dnr07",
             "use_ipv4_nat": "true"
         }
     ],
     "provisioners": [
         {
-             "type": "ansible",
-             "playbook_file": "../ansible/packer_db.yml"
+            "type": "shell",
+            "script": "scripts/install_ruby.sh",
+            "execute_command": "sudo {{.Path}}"
         }
     ]
 }
